@@ -86,3 +86,32 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #238080;
+      border: none;
+     
+      
+    }
+    
+    .button:hover {background-color: #16bfbf}
+    
+    .button:active {
+      background-color: #238080;
+    
+      transform: translateY(4px);
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Animated Button - "Pressed Effect"</h2>
+    
+ 
