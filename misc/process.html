@@ -13,7 +13,7 @@
 <!-- Site navigation menu -->
 
 <!-- Main content -->
-<div class="navbar">
+<div class="navbar" id="navbar">
   <a href="../index.html">Home page</a>
 
  <a href="proposal.html">Topic Proposal</a>
@@ -24,6 +24,20 @@
  <a href="guidelines.html">Guideline Conformance</a>
    <a href="process.html">Process Support</a>
   </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("navbar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      } else {
+      header.classList.remove("sticky");
+      }
+    }
+    </script>
 <h1>Project Process Support</h1>
 
 <p>Your team project has several stages, and the assignment process is supported by the linked resources in this mock-up site.

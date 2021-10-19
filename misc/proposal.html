@@ -13,7 +13,7 @@
 
 <!-- Site navigation menu -->
 
-<div class="navbar">
+<div class="navbar" id="navbar">
   <a href="../index.html">Home page</a>
 
    <a href="proposal.html">Topic Proposal</a>
@@ -203,6 +203,19 @@
 <p><h4>	Date Proposal Approved: 17/9/2021 </p></h4>
 
 <!-- Sign and date the page, it's only polite! -->
-
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.getElementById("navbar");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
 </body>
 </html>

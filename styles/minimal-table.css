@@ -54,7 +54,16 @@ tr:hover td {background-color: #d2f2ed;}
   background-color:  #238080;
 
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -139,9 +148,5 @@ tr:hover td {background-color: #d2f2ed;}
 
   transform: translateY(4px);
 }
-</style>
-</head>
-<body>
 
-<h2>Animated Button - "Pressed Effect"</h2>
 

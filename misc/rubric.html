@@ -10,7 +10,7 @@
 
 <body>
 <!-- Site navigation menu -->
-<div class="navbar">
+<div class="navbar" id="navbar">
   <a href="../index.html">Home</a>
   <a href="process.html">Process Support</a>
   </div>
@@ -34,5 +34,19 @@
 <h6><em>•	Where the student/team meets the criteria in a particular grade range, an examiner may award the grade as specified</h6></em> 
 <h6><em>•	Where the student/team does not meet the criteria completely in a particular grade range but not to the extent of awarding a lower grade, an examiner may award the grade with a ‘-’ qualifier</h6></em> 
 </p>
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.getElementById("navbar");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
 </body>
 </html>
