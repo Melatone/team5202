@@ -10,10 +10,11 @@
 	
 
   a:link {
-    color: white}
+    color: #238080}
   a:visited {
-    color: white}
+    color: #238080}
 
+   
 
 
    
@@ -27,6 +28,7 @@
       float: left;
       display: grid;
       font-size: 16px;
+      color: white;
       background:#238080;
       text-align: center;
       padding: 14px 16px;

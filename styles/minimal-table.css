@@ -13,16 +13,19 @@ font-family: 'Gothic A1', sans-serif;
   }
 
 
+  
 a:link {
-  color: #a0e5e3}
+  color: #238080}
 a:visited {
-  color: white }
+  color: #238080}
 
 table {
-  border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
+margin-right: auto;
+margin-left: auto;
   letter-spacing: 1px;
   font-size: 0.8rem;
+  display: flex;
+  
 }
 th, a{
   color: white;
@@ -30,8 +33,8 @@ th, a{
 td, th {
   border: 1px solid rgb(190,190,190);
   padding: 10px 20px;
+ 
 }
-
 th {
   background-color: #238080;
 }
@@ -135,7 +138,7 @@ tr:hover td {background-color: #d2f2ed;}
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #238080;
+  background-color: #90cecc;
   border: none;
  
   
@@ -144,7 +147,7 @@ tr:hover td {background-color: #d2f2ed;}
 .button:hover {background-color: #16bfbf}
 
 .button:active {
-  background-color: #238080;
+  background-color: #16bfbf;
 
   transform: translateY(4px);
 }
